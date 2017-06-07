@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>photo2</name>
+	<name>启动页</name>
 	<comment>Create By HBuilder</comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1496632084525</id>
+			<id>1496817935114</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
