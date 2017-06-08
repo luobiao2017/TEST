@@ -4,32 +4,213 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 		<title></title>
-		<style>
-			*{margin: 0;padding: 0;}
-			html,body{width: 100%;height: 100%;}
-			.container{width: 100%;height: 100%;display: flex;overflow: hidden;}
-			.container .banner{width: 100%;height: 100%;list-style: none;}
-			.banner li{width: 100%;height: 100%;-webkit-flex-shrink: 0;}
-			.banner li img{width: 100%;height: 100%;}
-		</style>
-		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css" />
+		<script>
+			document.documentElement.style.fontSize=innerWidth/16+"px";
+		</script>
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/zepto.min.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<ul class="swiper-wrapper banner">
-				<li class="swiper-slide"><img src="img/1.png" alt="" /></li>
-				<li class="swiper-slide"><img src="img/2.png" alt="" /></li>
-				<li class="swiper-slide"><img src="img/3.png" alt="" /></li>
-				<li class="swiper-slide"><img src="img/4.png" alt="" /></li>
-			</ul>
-			<div class="swiper-pagination"></div>
+		<div class="box">
+			<header>
+				<a class="api1 fl_lt" href="">
+					<img class="fl_lt" src="img/1.png" alt="" />
+					<span class="fl_lt">首页</span>
+				</a>
+				<a class="api2 fl_lt" href="">面试</a>
+				<img src="img/banner.png" alt="" />
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<img src="img/jq.png" alt="" />
+						<div>面试技巧</div>
+					</li>
+					<li>
+						<img src="img/rh.png" alt="" />
+						<div>面试问题</div>
+					</li>
+					<li>
+						<img src="img/js.png" alt="" />
+						<div>面试自我介绍</div>
+					</li>
+					<li>
+						<img src="img/wt.png" alt="" />
+						<div>如何面试</div>
+					</li>
+					<li>
+						<img src="img/jy.png" alt="" />
+						<div>面试经验</div>
+					</li>
+					<li>
+						<img src="img/yy.png" alt="" />
+						<div>英语面试</div>
+					</li>
+				</ul>
+			</nav>
+			<section>
+				<div class="mode1">
+					<img src="img/2.png" alt="" />
+					<span>面试分类查询</span>
+				</div>
+				<hr />
+				<ul class="content">
+					<li>
+						<span>面试技巧</span>
+						<span class="link"><a href="">公务员</a></span>
+						<span class="link"><a href="">会计</a></span>
+						<span class="link"><a href="">求职</a></span>
+						<span class="fa fa-angle-double-down"></span>
+					</li>
+					<ul class="show">
+						<li>文员</li>
+						<li>招聘</li>
+						<li>自主招生</li>
+						<li>置业顾问</li>
+						<li>应届生</li>
+						<li>大学生</li>
+						<li>银行</li>
+						<li>教师</li>
+						<li>销售</li>
+						<li>英语</li>
+						<li>事业单位</li>
+						<li>医药代表</li>
+						<li>自我介绍</li>
+						<li>外企</li>
+					</ul>
+					<li>
+						<span>面试问题</span>
+						<span class="link"><a href="">及答案</a></span>
+						<span class="link"><a href="">银行</a></span>
+						<span class="link"><a href="">销售</a></span>
+						<span class="fa fa-angle-double-down"></span>
+					</li>
+					<ul class="show">
+						<li>文员</li>
+						<li>招聘</li>
+						<li>自主招生</li>
+						<li>置业顾问</li>
+						<li>应届生</li>
+						<li>大学生</li>
+						<li>银行</li>
+						<li>教师</li>
+						<li>销售</li>
+						<li>英语</li>
+						<li>事业单位</li>
+						<li>医药代表</li>
+						<li>自我介绍</li>
+						<li>外企</li>
+					</ul>
+					<li>
+						<span>面试经验</span>
+						<span class="link"><a href="">教师</a></span>
+						<span class="link"><a href="">公务员</a></span>
+						<span class="link"><a href="">中国银行</a></span>
+						<span class="fa fa-angle-double-down"></span>
+					</li>
+					<ul class="show">
+						<li>文员</li>
+						<li>招聘</li>
+						<li>自主招生</li>
+						<li>置业顾问</li>
+						<li>应届生</li>
+						<li>大学生</li>
+						<li>银行</li>
+						<li>教师</li>
+						<li>销售</li>
+						<li>英语</li>
+						<li>事业单位</li>
+						<li>医药代表</li>
+						<li>自我介绍</li>
+						<li>外企</li>
+					</ul>
+					<li>
+						<span>英语面试</span>
+						<span class="link"><a href="">自我介绍</a></span>
+						<span class="link"><a href="">口语900</a></span>
+						<span class="link"><a href="">常见问题</a></span>
+						<span class="fa fa-angle-double-down"></span>
+					</li>
+					<ul class="show">
+						<li>文员</li>
+						<li>招聘</li>
+						<li>自主招生</li>
+						<li>置业顾问</li>
+						<li>应届生</li>
+						<li>大学生</li>
+						<li>银行</li>
+						<li>教师</li>
+						<li>销售</li>
+						<li>英语</li>
+						<li>事业单位</li>
+						<li>医药代表</li>
+						<li>自我介绍</li>
+						<li>外企</li>
+					</ul>
+					<li>
+						<span>面试自我</span>
+						<span class="link"><a href="">银行</a></span>
+						<span class="link"><a href="">英语</a></span>
+						<span class="link"><a href="">英文</a></span>
+						<span class="fa fa-angle-double-down"></span>
+					</li>
+					<ul class="show">
+						<li>文员</li>
+						<li>招聘</li>
+						<li>自主招生</li>
+						<li>置业顾问</li>
+						<li>应届生</li>
+						<li>大学生</li>
+						<li>银行</li>
+						<li>教师</li>
+						<li>销售</li>
+						<li>英语</li>
+						<li>事业单位</li>
+						<li>医药代表</li>
+						<li>自我介绍</li>
+						<li>外企</li>
+					</ul>
+					<li>
+						<span>如何面试</span>
+						<span class="link"><a href="">克服紧张</a></span>
+						<span class="link"><a href="">应对面试</a></span>
+						<span class="link"><a href="">如何提问</a></span> 
+						<span class="fa fa-angle-double-down"></span>
+					</li>
+					<ul class="show">
+						<li>文员</li>
+						<li>招聘</li>
+						<li>自主招生</li>
+						<li>置业顾问</li>
+						<li>应届生</li>
+						<li>大学生</li>
+						<li>银行</li>
+						<li>教师</li>
+						<li>销售</li>
+						<li>英语</li>
+						<li>事业单位</li>
+						<li>医药代表</li>
+						<li>自我介绍</li>
+						<li>外企</li>
+					</ul>
+				</ul>
+			</section>
+			<footer></footer>
 		</div>
-		<script src="js/zepto.min.js"></script>
-		<script src="js/swiper-3.4.2.min.js"></script>
-		<script type="text/javascript">
-			var s=new Swiper(".container",{
-				pagination:".swiper-pagination"
-			})
+		<script>
+			$(function(){
+	            $(".content li .fa").on("tap",function(){
+		            $(this).parent().next().toggle();
+		            if($(this).parent().next().is(":hidden")){
+		            	$(this).removeClass(".fa fa-angle-double-down").addClass(".fa fa-angle-double-down");
+		            }
+                    else{
+                    	$(this).removeClass(".fa fa-angle-double-down").addClass(".fa fa-angle-double-up");
+                    }
+	            }) 
+            })
 		</script>
 	</body>
 </html>
