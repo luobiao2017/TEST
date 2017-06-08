@@ -30,8 +30,8 @@ $bl:20;
         color: white;
         }
         .link_box{width: 100%;height: 90/$bl+rem;overflow: hidden;position: relative;padding: 0;
-            ul{width: 200%;height: 90/$bl+rem;display: flex;justify-content:space-around;transition: all 1s;
-                li{width: 30/$bl+rem;text-align: center;color: #aaa;
+            ul{width: 200%;height: 90/$bl+rem;transition: all 1s;
+                li{width: 64/$bl+rem;text-align: center;color: #aaa;float: left;
                     div:nth-child(1){margin-top: 20/$bl+rem;margin-bottom: 5/$bl+rem;}
                     div:nth-child(2){font-size: 12/$bl+rem;}
                 }
