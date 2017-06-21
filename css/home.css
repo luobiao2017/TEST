@@ -1,0 +1,337 @@
+html, body { width: 100%; height: 100%; font-style: "weiruanyahei"; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+li { list-style: none; }
+
+a { text-decoration: none; -webkit-tap-highlight-color: transparent; }
+
+.fl_lt { float: left; }
+
+.fl_rt { float: right; }
+
+.box { width: 100%; height: 100%; position: relative; }
+.box header { width: 100%; height: 2rem; background: black; position: fixed; left: 0; top: 0; z-index: 999; }
+.box header .menu_left { width: 7.5rem; height: 2rem; line-height: 2rem; }
+.box header .menu_left span { display: inline-block; color: white; font-size: 0.8rem; margin: 0 0.5rem; }
+.box header .menu_right { width: 8.5rem; height: 2rem; padding-top: 0.25rem; display: flex; justify-content: space-around; }
+.box header .menu_right span { width: 1.5rem; height: 1.5rem; border: 1px #eee solid; border-radius: 0.75rem; line-height: 1.5rem; text-align: center; color: white; font-size: 0.5rem; box-sizing: border-box; }
+.box section { width: 100%; height: 100%; padding-top: 2rem; }
+.box section ul { width: 600%; height: 100%; position: relative; }
+.box section ul .page1 { width: 16rem; height: 100%; overflow: auto; }
+.box section ul .page1 .search { width: 16rem; height: 2.25rem; background: #FAFAFA; padding: 0.4rem 0.25rem; position: absolute; left: 0; top: 0; z-index: 999; }
+.box section ul .page1 .search span:nth-of-type(1) { display: inline-block; width: 2.75rem; height: 1.25rem; background: #FFD700; vertical-align: middle; border: none; border-radius: 0.15rem 0 0 0.15rem; font-size: 0.6rem; text-align: center; line-height: 1.25rem; }
+.box section ul .page1 .search input { width: 9.25rem; height: 1.25rem; background: #FCE34C; vertical-align: middle; border: none; border-radius: 0 0.15rem 0.15rem 0; outline: none; font-size: 0.6rem; }
+.box section ul .page1 .search span:nth-of-type(2) { display: inline-block; width: 1.25rem; height: 1.25rem; line-height: 1.25rem; text-align: center; background: #FCE34C; vertical-align: middle; }
+.box section ul .page1 .search span:nth-of-type(3) { display: inline-block; width: 2rem; height: 1.25rem; background: #FFD700; text-align: center; vertical-align: middle; font-size: 0.6rem; line-height: 1.25rem; border-radius: 0.15rem; margin-left: 0.25rem; }
+.box section ul .page1 .section_menu { width: 100%; height: 8.5rem; margin-top: 2.25rem; overflow-x: hidden; }
+.box section ul .page1 .section_menu ul { width: 21rem; height: 8.5rem; display: flex; justify-content: flex-start; flex-wrap: wrap; border-top: 1px #ccc solid; }
+.box section ul .page1 .section_menu ul li { width: 3rem; height: 4.2rem; border-right: 1px #ccc solid; border-bottom: 1px #ccc solid; text-align: center; }
+.box section ul .page1 .section_menu ul li span { width: 100%; }
+.box section ul .page1 .section_menu ul li span:nth-child(1) { margin-top: 1rem; font-size: 1.25rem; color: black; }
+.box section ul .page1 .section_menu ul li span:nth-child(2) { margin-top: 0.5rem; font-size: 0.4rem; color: #bbb; }
+.box section ul .page1 .section_submenu { width: 100%; height: 2rem; padding: 0 0.5rem; background: #FAFAFA; }
+.box section ul .page1 .section_submenu span { display: inline-block; width: 7.25rem; height: 1.25rem; background: white; line-height: 1.25rem; text-align: center; font-size: 0.7rem; margin-top: 0.5rem; color: #ccc; }
+.box section ul .page1 .section_pics img { width: 15.5rem; height: 15.5rem; margin: 0.25rem; display: block; }
+.box section ul .page2 { width: 16rem; height: 26.4rem; overflow: auto; }
+.box section ul .page2 ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page2 ul .page2_start { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; }
+.box section ul .page2 ul .page2_start ul { width: 16rem; height: 100%; position: relative; }
+.box section ul .page2 ul .page2_start ul .start_one { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page2 ul .page2_start ul .start_one .start_line { width: 2rem; height: 2rem; border-bottom: 1px black solid; margin: 0 0 2rem 2rem; }
+.box section ul .page2 ul .page2_start ul .start_one p { width: 13.25rem; font-size: 0.5rem; line-height: 0.75rem; margin-left: 2rem; }
+.box section ul .page2 ul .page2_start ul .start_one .start_login { width: 6.5rem; height: 6.5rem; border-radius: 3.25rem; margin: 7rem 4.75rem; background: #FFD700; text-align: center; line-height: 6.5rem; font-size: 0.6rem; }
+.box section ul .page2 ul .page2_start ul .start_two { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; }
+.box section ul .page2 ul .page2_start ul .start_two .start2_tit { width: 16rem; height: 2rem; border-bottom: 1px #ccc solid; }
+.box section ul .page2 ul .page2_start ul .start_two .start2_tit .tit_left { margin-left: 1.5rem; line-height: 2rem; font-size: 0.6rem; }
+.box section ul .page2 ul .page2_start ul .start_two .start2_tit .tit_right { margin-right: 0.5rem; line-height: 2rem; }
+.box section ul .page2 ul .page2_start ul .start_two .start2_tit .tit_right span { font-size: 0.6rem; }
+.box section ul .page2 ul .page2_start ul .start_two ul { width: 16rem; height: 6rem; }
+.box section ul .page2 ul .page2_start ul .start_two ul li { width: 16rem; height: 2rem; }
+.box section ul .page2 ul .page2_start ul .start_two ul li .start2_user_pics img { display: inline-block; width: 1.25rem; height: 1.25rem; border-radius: 0.6rem; margin: 0.4rem 0.25rem 0 0.5rem; }
+.box section ul .page2 ul .page2_start ul .start_two ul li .start2_user_text { width: 13.5rem; height: 2rem; border-bottom: 1px #ccc solid; text-align: center; }
+.box section ul .page2 ul .page2_start ul .start_two ul li .start2_user_text .user_text_one { font-size: 0.6rem; margin: 0.6rem 0.5rem 0 0; }
+.box section ul .page2 ul .page2_start ul .start_two ul li .start2_user_text .user_text_two { font-size: 0.6rem; color: #ccc; margin: 0.6rem; }
+.box section ul .page2 ul .page2_start ul .start_two ul li .start2_user_text .user_text_three { font-size: 0.6rem; margin: 0.6rem 0.6rem 0.6rem 3rem; color: #FFD700; }
+.box section ul .page2 ul .page2_start ul .start_two ul li .start2_user_text .user_text_four { width: 1.8rem; height: 1.25rem; border-radius: 0.25rem; background: #FFD700; margin-top: 0.4rem; line-height: 1rem; }
+.box section ul .page2 ul .page2_start ul .start_two ul li .start2_user_text .user_text_four span { font-size: 0.6rem; }
+.box section ul .page2 ul .page2_start ul .start_two .start2_pics img { width: 15.5rem; height: 15.5rem; margin: 0.25rem; }
+.box section ul .page2 ul .page2_prev { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page2 ul .page2_prev ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page2 ul .page2_prev ul .page2_register { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; overflow-x: auto; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one .register1_close { margin: 0 0 0 0.75rem; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one .register1_login { width: 6.5rem; height: 3.5rem; margin: 15rem 0 4.75rem 2rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one .register1_login p { margin: 0 0 0.75rem 0.25rem; font-size: 0.5rem; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one .register1_login p a { color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one .register1_login span { display: inline-block; width: 2rem; height: 2rem; border-radius: 1rem; text-align: center; line-height: 2rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one .register1_login span:nth-of-type(1) { border: 2px #FCD800 solid; color: #FCD800; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one .register1_login span:nth-of-type(2) { border: 2px #fff solid; color: #ddd; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one .register1_btn { width: 100%; height: 2rem; background: #000C1B; padding-left: 2rem; line-height: 2rem; color: white; font-size: 0.5rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_one .register1_btn a { color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_two { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_two .register2_close { margin: 0.75rem 0 0 0.75rem; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_two .register2_btn { width: 6.5rem; height: 3.5rem; margin: 15rem 0 4.75rem 2rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_two .register2_btn div:nth-child(1) { text-align: center; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_two .register2_btn div:nth-child(1) span:nth-child(1) { display: block; width: 2rem; height: 2rem; border-radius: 1rem; text-align: center; line-height: 2rem; border: 2px #fff solid; color: #fff; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_two .register2_btn div:nth-child(1) span:nth-child(2) { font-size: 0.6rem; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_two .register2_btn div:nth-child(2) { text-align: center; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_two .register2_btn div:nth-child(2) span:nth-child(1) { display: block; width: 2rem; height: 2rem; border-radius: 1rem; text-align: center; line-height: 2rem; border: 2px #fff solid; color: #ddd; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_two .register2_btn div:nth-child(2) span:nth-child(2) { font-size: 0.6rem; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three div .register3_close { margin: 0 0 0 0.75rem; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three div span { color: white; font-size: 0.5rem; margin-left: 6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three .register3_help { margin: 2.25rem 0 0 2rem; color: white; font-size: 0.65rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three .register3_user_show { width: 100%; line-height: 1.5rem; margin: 4rem 0 0 2rem; color: white; font-size: 0.6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three input { width: 11rem; border: none; border-bottom: 1px solid white; background: none; display: inline-block; color: white; margin-left: 2rem; outline: none; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three .go { display: inline-block; width: 1.75rem; height: 1.75rem; border-radius: 0.85rem; background: #090C14; color: #eee; text-align: center; line-height: 1.75rem; margin: 0 0.1rem 0 0; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three p { width: 100%; color: white; margin: 0.5rem 0 1.1rem 2rem; font-size: 0.6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three .register3_btn { width: 100%; height: 1rem; margin: 0 0 1rem 1rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three .register3_btn div { display: inline-block; margin-left: 1rem; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three p { font-size: 0.6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three p a { color: #FFD700; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three .register3_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three .register3_key div:nth-last-child(1) { background: black; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_three .register3_key div:nth-last-child(3) { background: black; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_four { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_four .register4_help_one { font-size: 0.6rem; color: white; margin: 16rem 0 2rem 2rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_four .register4_help_one a { color: #E3C005; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_four hr { margin-left: 2rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_four .register4_help_two { font-size: 0.6rem; color: white; margin: 2rem 0 0 2rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_four .register4_help_two a { color: #E3C005; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_five { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_five .register5_name { text-align: center; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_five .register5_name span { color: white; font-size: 0.5rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_five input { width: 11rem; border: none; border-bottom: 1px solid white; background: none; display: inline-block; color: white; margin: 6.5rem 0 0 2rem; outline: none; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_five .go { display: inline-block; width: 1.75rem; height: 1.75rem; border-radius: 0.85rem; background: #090C14; color: #eee; text-align: center; line-height: 1.75rem; margin: 0 0.1rem 0 0; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_five .register5_show { width: 11rem; height: 1.5rem; color: white; margin: 0.5rem 0 6.5rem 2rem; font-size: 0.6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_five .register5_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_five .register5_key div:nth-last-child(1) { background: black; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .register_five .register5_key div:nth-last-child(3) { background: black; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start { width: 16rem; height: 26.4rem; background: white; position: absolute; left: 0; top: 0; background: white; display: none; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start p { line-height: 1rem; font-size: 0.6rem; margin: 2rem 3rem 2.5rem 2rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start ul { height: 15rem; width: 16rem; padding: 0 0.5rem; margin-bottom: 3.25rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start ul li { height: 2rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start ul li .user_pics img { display: inline-block; width: 1.25rem; height: 1.25rem; border-radius: 0.6rem; margin: 0.4rem 0.25rem 0 0; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start ul li .user_text { width: 13.5rem; height: 2rem; border-bottom: 1px #ccc solid; text-align: center; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start ul li .user_text .text_one { font-size: 0.6rem; margin: 0.6rem 0.5rem 0 0; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start ul li .user_text .text_two { font-size: 0.6rem; color: #ccc; margin: 0.6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start ul li .user_text .text_three { width: 1.8rem; height: 1.25rem; border-radius: 0.25rem; border: 1px #FFD700 solid; margin-top: 0.4rem; line-height: 1rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start ul li .user_text .text_three span { font-size: 0.6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_register ul .app_start .start_btn { width: 16rem; height: 1.75rem; text-align: center; line-height: 1.75rem; border-radius: 0.25rem; background: #FFD700; font-size: 0.6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_login { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page2 ul .page2_prev ul .page2_login div .login_close { margin: 0 0 0 0.75rem; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_login div span { color: white; font-size: 0.5rem; margin-left: 6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_login .login_user_show { width: 100%; line-height: 1.5rem; margin: 6.75rem 0 0 2rem; color: white; font-size: 0.6rem; }
+.box section ul .page2 ul .page2_prev ul .page2_login input { width: 11rem; border: none; border-bottom: 1px solid white; background: none; display: inline-block; color: white; margin-left: 2rem; outline: none; }
+.box section ul .page2 ul .page2_prev ul .page2_login .go { display: inline-block; width: 1.75rem; height: 1.75rem; border-radius: 0.85rem; background: #090C14; color: #eee; text-align: center; line-height: 1.75rem; margin: 0 0.1rem 0 0; }
+.box section ul .page2 ul .page2_prev ul .page2_login p { width: 100%; color: white; margin: 0.5rem 0 1.1rem 2rem; }
+.box section ul .page2 ul .page2_prev ul .page2_login .login_btn { width: 100%; height: 1rem; margin: 0 0 1rem 1rem; }
+.box section ul .page2 ul .page2_prev ul .page2_login .login_btn div { display: inline-block; margin-left: 1rem; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_login p a { color: #FFD700; }
+.box section ul .page2 ul .page2_prev ul .page2_login .login_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
+.box section ul .page2 ul .page2_prev ul .page2_login .login_key div:nth-last-child(1) { background: black; color: white; }
+.box section ul .page2 ul .page2_prev ul .page2_login .login_key div:nth-last-child(3) { background: black; color: white; }
+.box section ul .page3 { width: 16rem; height: 26.4rem; overflow: auto; }
+.box section ul .page3 .page3_search { width: 16rem; height: 2.25rem; background: #FAFAFA; text-align: center; line-height: 2.25rem; }
+.box section ul .page3 .page3_search span { width: 1.25rem; height: 1.25rem; background: #FCE34C; vertical-align: middle; padding: 0.4rem 0.4rem; font-size: 0.65rem; }
+.box section ul .page3 .page3_search input { width: 13.25rem; height: 1.25rem; background: #FCE34C; vertical-align: middle; border: none; border-radius: 0 0.15rem 0.15rem 0; outline: none; }
+.box section ul .page3 .page3_menu { width: 100%; height: 6rem; padding: 0 1rem; background: #fff; }
+.box section ul .page3 .page3_menu li { height: 2rem; line-height: 2rem; text-align: center; font-size: 0.7rem; float: left; padding-right: 0.5rem; font-size: 0.65rem; }
+.box section ul .page3 .page3_menu li:not(:nth-last-child(-n+4)) { border-bottom: 1px #ccc solid; }
+.box section ul .page3 .page3_submenu { width: 100%; height: 2rem; padding: 0 0.5rem; background: #FAFAFA; }
+.box section ul .page3 .page3_submenu span { display: inline-block; width: 4.75rem; height: 1.25rem; background: white; line-height: 1.25rem; text-align: center; font-size: 0.7rem; margin-top: 0.5rem; color: #ccc; }
+.box section ul .page3 .page3_pics img { width: 15.5rem; height: 15.5rem; margin: 0.25rem; display: block; }
+.box section ul .page4 { width: 16rem; height: 26.4rem; }
+.box section ul .page4 ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page4 ul .page4_one { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; }
+.box section ul .page4 ul .page4_one p { font-size: 0.6rem; margin: 3rem 0 19rem 2rem; }
+.box section ul .page4 ul .page4_one .page4_foot { width: 16rem; height: 3rem; padding: 0 0.5rem; text-align: center; line-height: 3rem; }
+.box section ul .page4 ul .page4_one .page4_foot span { width: 33.3%; font-size: 0.65rem; }
+.box section ul .page4 ul .page4_two { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page4 ul .page4_two p { font-size: 0.6rem; margin: 3rem 0 19rem 2rem; }
+.box section ul .page4 ul .page4_two .page4_foot { width: 16rem; height: 3rem; padding: 0 0.5rem; text-align: center; line-height: 3rem; }
+.box section ul .page4 ul .page4_two .page4_foot span { width: 33.3%; font-size: 0.65rem; }
+.box section ul .page5 { width: 16rem; height: 26.4rem; }
+.box section ul .page5 ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page5 ul .page5_start { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; }
+.box section ul .page5 ul .page5_start ul { width: 16rem; height: 100%; position: relative; }
+.box section ul .page5 ul .page5_start ul .start_one { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page5 ul .page5_start ul .start_one .page5_line { width: 2rem; height: 2rem; border-bottom: 1px black solid; margin: 0 0 2rem 2rem; }
+.box section ul .page5 ul .page5_start ul .start_one p { width: 13.25rem; font-size: 0.5rem; line-height: 0.75rem; margin-left: 2rem; }
+.box section ul .page5 ul .page5_start ul .start_one .page5_login { width: 6.5rem; height: 6.5rem; border-radius: 3.25rem; margin: 7rem 4.75rem; background: #FFD700; text-align: center; line-height: 6.5rem; font-size: 0.6rem; }
+.box section ul .page5 ul .page5_start ul .start_two { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; }
+.box section ul .page5 ul .page5_start ul .start_two .page5_user_pics img { width: 100%; height: 22rem; }
+.box section ul .page5 ul .page5_start ul .start_two .page5_user_txt { width: 100%; height: 4.5rem; background: black; }
+.box section ul .page5 ul .page5_prev { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page5 ul .page5_prev ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page5 ul .page5_prev ul .page5_register { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; overflow-x: auto; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one .register1_close { margin: 0 0 0 0.75rem; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one .register1_login { width: 6.5rem; height: 3.5rem; margin: 15rem 0 4.75rem 2rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one .register1_login p { margin: 0 0 0.75rem 0.25rem; font-size: 0.5rem; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one .register1_login p a { color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one .register1_login span { display: inline-block; width: 2rem; height: 2rem; border-radius: 1rem; text-align: center; line-height: 2rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one .register1_login span:nth-of-type(1) { border: 2px #FCD800 solid; color: #FCD800; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one .register1_login span:nth-of-type(2) { border: 2px #fff solid; color: #ddd; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one .register1_btn { width: 100%; height: 2rem; background: #000C1B; padding-left: 2rem; line-height: 2rem; color: white; font-size: 0.5rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_one .register1_btn a { color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_two { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_two .register2_close { margin: 0.75rem 0 0 0.75rem; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_two .register2_btn { width: 6.5rem; height: 3.5rem; margin: 15rem 0 4.75rem 2rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_two .register2_btn div:nth-child(1) { text-align: center; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_two .register2_btn div:nth-child(1) span:nth-child(1) { display: block; width: 2rem; height: 2rem; border-radius: 1rem; text-align: center; line-height: 2rem; border: 2px #fff solid; color: #fff; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_two .register2_btn div:nth-child(1) span:nth-child(2) { font-size: 0.6rem; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_two .register2_btn div:nth-child(2) { text-align: center; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_two .register2_btn div:nth-child(2) span:nth-child(1) { display: block; width: 2rem; height: 2rem; border-radius: 1rem; text-align: center; line-height: 2rem; border: 2px #fff solid; color: #ddd; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_two .register2_btn div:nth-child(2) span:nth-child(2) { font-size: 0.6rem; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three div .register3_close { margin: 0 0 0 0.75rem; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three div span { color: white; font-size: 0.5rem; margin-left: 6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three .register3_help { margin: 2.25rem 0 0 2rem; color: white; font-size: 0.65rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three .register3_user_show { width: 100%; line-height: 1.5rem; margin: 4rem 0 0 2rem; color: white; font-size: 0.6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three input { width: 11rem; border: none; border-bottom: 1px solid white; background: none; display: inline-block; color: white; margin-left: 2rem; outline: none; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three .go { display: inline-block; width: 1.75rem; height: 1.75rem; border-radius: 0.85rem; background: #090C14; color: #eee; text-align: center; line-height: 1.75rem; margin: 0 0.1rem 0 0; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three p { width: 100%; color: white; margin: 0.5rem 0 1.1rem 2rem; font-size: 0.6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three .register3_btn { width: 100%; height: 1rem; margin: 0 0 1rem 1rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three .register3_btn div { display: inline-block; margin-left: 1rem; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three p { font-size: 0.6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three p a { color: #FFD700; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three .register3_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three .register3_key div:nth-last-child(1) { background: black; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_three .register3_key div:nth-last-child(3) { background: black; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_four { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_four .register4_help_one { font-size: 0.6rem; color: white; margin: 16rem 0 2rem 2rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_four .register4_help_one a { color: #E3C005; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_four hr { margin-left: 2rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_four .register4_help_two { font-size: 0.6rem; color: white; margin: 2rem 0 0 2rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_four .register4_help_two a { color: #E3C005; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_five { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_five .register5_name { text-align: center; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_five .register5_name span { color: white; font-size: 0.5rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_five input { width: 11rem; border: none; border-bottom: 1px solid white; background: none; display: inline-block; color: white; margin: 6.5rem 0 0 2rem; outline: none; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_five .go { display: inline-block; width: 1.75rem; height: 1.75rem; border-radius: 0.85rem; background: #090C14; color: #eee; text-align: center; line-height: 1.75rem; margin: 0 0.1rem 0 0; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_five .register5_show { width: 11rem; height: 1.5rem; color: white; margin: 0.5rem 0 6.5rem 2rem; font-size: 0.6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_five .register5_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_five .register5_key div:nth-last-child(1) { background: black; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .register_five .register5_key div:nth-last-child(3) { background: black; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start { width: 16rem; height: 26.4rem; background: white; position: absolute; left: 0; top: 0; background: white; display: none; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start p { line-height: 1rem; font-size: 0.6rem; margin: 2rem 3rem 2.5rem 2rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start ul { height: 15rem; width: 16rem; padding: 0 0.5rem; margin-bottom: 3.25rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start ul li { height: 2rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start ul li .user_pics img { display: inline-block; width: 1.25rem; height: 1.25rem; border-radius: 0.6rem; margin: 0.4rem 0.25rem 0 0; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start ul li .user_text { width: 13.5rem; height: 2rem; border-bottom: 1px #ccc solid; text-align: center; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start ul li .user_text .text_one { font-size: 0.6rem; margin: 0.6rem 0.5rem 0 0; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start ul li .user_text .text_two { font-size: 0.6rem; color: #ccc; margin: 0.6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start ul li .user_text .text_three { width: 1.8rem; height: 1.25rem; border-radius: 0.25rem; border: 1px #FFD700 solid; margin-top: 0.4rem; line-height: 1rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start ul li .user_text .text_three span { font-size: 0.6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_register ul .app_start .start_btn { width: 16rem; height: 1.75rem; text-align: center; line-height: 1.75rem; border-radius: 0.25rem; background: #FFD700; font-size: 0.6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_login { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page5 ul .page5_prev ul .page5_login div .login_close { margin: 0 0 0 0.75rem; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_login div span { color: white; font-size: 0.5rem; margin-left: 6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_login .login_user_show { width: 100%; line-height: 1.5rem; margin: 6.75rem 0 0 2rem; color: white; font-size: 0.6rem; }
+.box section ul .page5 ul .page5_prev ul .page5_login input { width: 11rem; border: none; border-bottom: 1px solid white; background: none; display: inline-block; color: white; margin-left: 2rem; outline: none; }
+.box section ul .page5 ul .page5_prev ul .page5_login .go { display: inline-block; width: 1.75rem; height: 1.75rem; border-radius: 0.85rem; background: #090C14; color: #eee; text-align: center; line-height: 1.75rem; margin: 0 0.1rem 0 0; }
+.box section ul .page5 ul .page5_prev ul .page5_login p { width: 100%; color: white; margin: 0.5rem 0 1.1rem 2rem; }
+.box section ul .page5 ul .page5_prev ul .page5_login .login_btn { width: 100%; height: 1rem; margin: 0 0 1rem 1rem; }
+.box section ul .page5 ul .page5_prev ul .page5_login .login_btn div { display: inline-block; margin-left: 1rem; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_login p a { color: #FFD700; }
+.box section ul .page5 ul .page5_prev ul .page5_login .login_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
+.box section ul .page5 ul .page5_prev ul .page5_login .login_key div:nth-last-child(1) { background: black; color: white; }
+.box section ul .page5 ul .page5_prev ul .page5_login .login_key div:nth-last-child(3) { background: black; color: white; }
+.box section ul .page6 { width: 16rem; height: 26.4rem; }
+.box section ul .page6 ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page6 ul .page6_start { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; }
+.box section ul .page6 ul .page6_start ul { width: 16rem; height: 100%; position: relative; }
+.box section ul .page6 ul .page6_start ul .start_one { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page6 ul .page6_start ul .start_one .page6_line { width: 2rem; height: 2rem; border-bottom: 1px black solid; margin: 0 0 2rem 2rem; }
+.box section ul .page6 ul .page6_start ul .start_one p { width: 13.25rem; font-size: 0.5rem; line-height: 0.75rem; margin-left: 2rem; }
+.box section ul .page6 ul .page6_start ul .start_one .page6_login { width: 6.5rem; height: 6.5rem; border-radius: 3.25rem; margin: 7rem 4.75rem; background: #FFD700; text-align: center; line-height: 6.5rem; font-size: 0.6rem; }
+.box section ul .page6 ul .page6_start ul .start_two { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; }
+.box section ul .page6 ul .page6_start ul .start_two .two_perv { width: 100%; height: 16rem; background: #fafafa; position: relative; }
+.box section ul .page6 ul .page6_start ul .start_two .two_perv .page6_line { width: 2rem; height: 2rem; border-bottom: 1px black solid; margin: 0 0 2rem 2rem; }
+.box section ul .page6 ul .page6_start ul .start_two .two_perv p { width: 13.25rem; font-size: 0.5rem; line-height: 0.75rem; margin-left: 2rem; }
+.box section ul .page6 ul .page6_start ul .start_two .two_perv p:nth-of-type(2) { color: #ccc; }
+.box section ul .page6 ul .page6_start ul .start_two .two_perv .text_next { font-size: 0.6rem; position: absolute; right: 1.5rem; bottom: 1rem; }
+.box section ul .page6 ul .page6_start ul .start_two .two_next { width: 100%; height: 1.5rem; border-radius: 0.25rem; margin-top: 8.75rem; background: #FFD700; text-align: center; line-height: 1.5rem; font-size: 0.6rem; }
+.box section ul .page6 ul .page6_prev { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page6 ul .page6_prev ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page6 ul .page6_prev ul .page6_register { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; overflow-x: auto; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul { width: 16rem; height: 26.4rem; position: relative; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one .register1_close { margin: 0 0 0 0.75rem; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one .register1_login { width: 6.5rem; height: 3.5rem; margin: 15rem 0 4.75rem 2rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one .register1_login p { margin: 0 0 0.75rem 0.25rem; font-size: 0.5rem; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one .register1_login p a { color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one .register1_login span { display: inline-block; width: 2rem; height: 2rem; border-radius: 1rem; text-align: center; line-height: 2rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one .register1_login span:nth-of-type(1) { border: 2px #FCD800 solid; color: #FCD800; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one .register1_login span:nth-of-type(2) { border: 2px #fff solid; color: #ddd; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one .register1_btn { width: 100%; height: 2rem; background: #000C1B; padding-left: 2rem; line-height: 2rem; color: white; font-size: 0.5rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_one .register1_btn a { color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_two { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_two .register2_close { margin: 0.75rem 0 0 0.75rem; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_two .register2_btn { width: 6.5rem; height: 3.5rem; margin: 15rem 0 4.75rem 2rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_two .register2_btn div:nth-child(1) { text-align: center; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_two .register2_btn div:nth-child(1) span:nth-child(1) { display: block; width: 2rem; height: 2rem; border-radius: 1rem; text-align: center; line-height: 2rem; border: 2px #fff solid; color: #fff; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_two .register2_btn div:nth-child(1) span:nth-child(2) { font-size: 0.6rem; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_two .register2_btn div:nth-child(2) { text-align: center; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_two .register2_btn div:nth-child(2) span:nth-child(1) { display: block; width: 2rem; height: 2rem; border-radius: 1rem; text-align: center; line-height: 2rem; border: 2px #fff solid; color: #ddd; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_two .register2_btn div:nth-child(2) span:nth-child(2) { font-size: 0.6rem; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three div .register3_close { margin: 0 0 0 0.75rem; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three div span { color: white; font-size: 0.5rem; margin-left: 6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three .register3_help { margin: 2.25rem 0 0 2rem; color: white; font-size: 0.65rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three .register3_user_show { width: 100%; line-height: 1.5rem; margin: 4rem 0 0 2rem; color: white; font-size: 0.6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three input { width: 11rem; border: none; border-bottom: 1px solid white; background: none; display: inline-block; color: white; margin-left: 2rem; outline: none; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three .go { display: inline-block; width: 1.75rem; height: 1.75rem; border-radius: 0.85rem; background: #090C14; color: #eee; text-align: center; line-height: 1.75rem; margin: 0 0.1rem 0 0; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three p { width: 100%; color: white; margin: 0.5rem 0 1.1rem 2rem; font-size: 0.6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three .register3_btn { width: 100%; height: 1rem; margin: 0 0 1rem 1rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three .register3_btn div { display: inline-block; margin-left: 1rem; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three p { font-size: 0.6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three p a { color: #FFD700; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three .register3_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three .register3_key div:nth-last-child(1) { background: black; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_three .register3_key div:nth-last-child(3) { background: black; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_four { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_four .register4_help_one { font-size: 0.6rem; color: white; margin: 16rem 0 2rem 2rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_four .register4_help_one a { color: #E3C005; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_four hr { margin-left: 2rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_four .register4_help_two { font-size: 0.6rem; color: white; margin: 2rem 0 0 2rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_four .register4_help_two a { color: #E3C005; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_five { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; background: #0C4077; display: none; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_five .register5_name { text-align: center; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_five .register5_name span { color: white; font-size: 0.5rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_five input { width: 11rem; border: none; border-bottom: 1px solid white; background: none; display: inline-block; color: white; margin: 6.5rem 0 0 2rem; outline: none; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_five .go { display: inline-block; width: 1.75rem; height: 1.75rem; border-radius: 0.85rem; background: #090C14; color: #eee; text-align: center; line-height: 1.75rem; margin: 0 0.1rem 0 0; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_five .register5_show { width: 11rem; height: 1.5rem; color: white; margin: 0.5rem 0 6.5rem 2rem; font-size: 0.6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_five .register5_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_five .register5_key div:nth-last-child(1) { background: black; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .register_five .register5_key div:nth-last-child(3) { background: black; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start { width: 16rem; height: 26.4rem; background: white; position: absolute; left: 0; top: 0; background: white; display: none; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start p { line-height: 1rem; font-size: 0.6rem; margin: 2rem 3rem 2.5rem 2rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start ul { height: 15rem; width: 16rem; padding: 0 0.5rem; margin-bottom: 3.25rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start ul li { height: 2rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start ul li .user_pics img { display: inline-block; width: 1.25rem; height: 1.25rem; border-radius: 0.6rem; margin: 0.4rem 0.25rem 0 0; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start ul li .user_text { width: 13.5rem; height: 2rem; border-bottom: 1px #ccc solid; text-align: center; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start ul li .user_text .text_one { font-size: 0.6rem; margin: 0.6rem 0.5rem 0 0; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start ul li .user_text .text_two { font-size: 0.6rem; color: #ccc; margin: 0.6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start ul li .user_text .text_three { width: 1.8rem; height: 1.25rem; border-radius: 0.25rem; border: 1px #FFD700 solid; margin-top: 0.4rem; line-height: 1rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start ul li .user_text .text_three span { font-size: 0.6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_register ul .app_start .start_btn { width: 16rem; height: 1.75rem; text-align: center; line-height: 1.75rem; border-radius: 0.25rem; background: #FFD700; font-size: 0.6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_login { width: 16rem; height: 26.4rem; position: absolute; left: 0; top: 0; display: none; }
+.box section ul .page6 ul .page6_prev ul .page6_login div .login_close { margin: 0 0 0 0.75rem; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_login div span { color: white; font-size: 0.5rem; margin-left: 6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_login .login_user_show { width: 100%; line-height: 1.5rem; margin: 6.75rem 0 0 2rem; color: white; font-size: 0.6rem; }
+.box section ul .page6 ul .page6_prev ul .page6_login input { width: 11rem; border: none; border-bottom: 1px solid white; background: none; display: inline-block; color: white; margin-left: 2rem; outline: none; }
+.box section ul .page6 ul .page6_prev ul .page6_login .go { display: inline-block; width: 1.75rem; height: 1.75rem; border-radius: 0.85rem; background: #090C14; color: #eee; text-align: center; line-height: 1.75rem; margin: 0 0.1rem 0 0; }
+.box section ul .page6 ul .page6_prev ul .page6_login p { width: 100%; color: white; margin: 0.5rem 0 1.1rem 2rem; }
+.box section ul .page6 ul .page6_prev ul .page6_login .login_btn { width: 100%; height: 1rem; margin: 0 0 1rem 1rem; }
+.box section ul .page6 ul .page6_prev ul .page6_login .login_btn div { display: inline-block; margin-left: 1rem; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_login p a { color: #FFD700; }
+.box section ul .page6 ul .page6_prev ul .page6_login .login_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
+.box section ul .page6 ul .page6_prev ul .page6_login .login_key div:nth-last-child(1) { background: black; color: white; }
+.box section ul .page6 ul .page6_prev ul .page6_login .login_key div:nth-last-child(3) { background: black; color: white; }
+
+/*# sourceMappingURL=home.css.map */

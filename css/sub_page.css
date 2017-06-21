@@ -1,0 +1,40 @@
+html, body { width: 100%; height: 100%; font-style: "weiruanyahei"; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+li { list-style: none; }
+
+a { text-decoration: none; -webkit-tap-highlight-color: transparent; }
+
+.fl_lt { float: left; }
+
+.fl_rt { float: right; }
+
+header { width: 100%; height: 4.5rem; position: fixed; left: 0; top: 0; background: white; z-index: 1000; }
+header .head_perv { width: 100%; height: 2.25rem; text-align: center; line-height: 2.25rem; padding: 0 0.5rem; }
+header .head_perv div { font-size: 0.75rem; margin-top: 1rem; }
+header .head_perv span { font-size: 0.75rem; }
+header .head_next { width: 100%; height: 2.25rem; padding: 0 0.5rem; }
+header .head_next div { font-size: 0.75rem; margin-top: 0.75rem; }
+
+section { width: 100%; height: 100%; padding-top: 4.5rem; overflow: auto; }
+section ul { width: 100%; height: 100%; position: relative; }
+section ul .pics { width: 100%; height: 100%; z-index: 998; }
+section ul .pics ul { padding: 0 0.25rem; overflow: auto; }
+section ul .pics ul li img { width: 15.5rem; height: 8rem; }
+section ul .left_menu { width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 999; background: white; display: none; }
+section ul .left_menu ul { width: 100%; height: 22.4rem; overflow: auto; }
+section ul .left_menu ul li { width: 100%; height: 2rem; line-height: 2rem; font-size: 0.75rem; }
+section ul .left_menu ul li a { color: black; }
+section ul .left_menu ul li a span { width: 2rem; height: 2rem; text-align: center; line-height: 2rem; }
+section ul .left_menu ul li:nth-child(1) { padding-left: 2rem; }
+section ul .left_menu .left_x { width: 100%; height: 30px; background: #eee; text-align: center; line-height: 1.5rem; font-size: 0.75rem; }
+section ul .right_menu { width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 999; background: white; display: none; }
+section ul .right_menu ul { width: 100%; height: 22.4rem; overflow: auto; }
+section ul .right_menu ul li { width: 100%; height: 2rem; line-height: 2rem; font-size: 0.75rem; }
+section ul .right_menu ul li a { color: black; }
+section ul .right_menu ul li a span { width: 2rem; height: 2rem; text-align: center; line-height: 2rem; }
+section ul .right_menu ul li:nth-child(1) { padding-left: 2rem; }
+section ul .right_menu .left_x { width: 100%; height: 30px; background: #eee; text-align: center; line-height: 1.5rem; font-size: 0.75rem; }
+
+/*# sourceMappingURL=sub_page.css.map */
