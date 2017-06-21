@@ -11,7 +11,7 @@ a{text-decoration: none;-webkit-tap-highlight-color: transparent;}
 		.menu_left{width: 150/$bl+rem;height: 40/$bl+rem;line-height: 40/$bl+rem;
 			span{display: inline-block;color: white;font-size: 16/$bl+rem;margin: 0 10/$bl+rem;}
 		}
-		.menu_right{width: 170/$bl+rem;height: 40/$bl+rem;padding-top: 5/$bl+rem;display: flex;justify-content: space-around;
+		.menu_right{width: 170/$bl+rem;height: 40/$bl+rem;padding-top: 5/$bl+rem;display: -webkit-flex;-webkit-justify-content: space-around;
 			span{width: 30/$bl+rem;height: 30/$bl+rem;border: 1px #eee solid;border-radius: 15/$bl+rem;line-height: 30/$bl+rem;text-align: center;color: white;font-size: 10/$bl+rem;box-sizing: border-box;}
 		}
 	}
