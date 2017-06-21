@@ -8,10 +8,10 @@ $(function(){
 	var w=$(window).width();
 	$("#section_menu").on("swipeLeft",function(){
 		n++;if(n>=1){n=1;}
-	    $("#mini_link").css("-webkit-transform","translate3d("+(-n*50)+"%,0,0)");
+	    $("#mini_menu").css("-webkit-transform","translate3d("+(-n*50)+"%,0,0)");
 	}).on("swipeRight",function(){
 		n--;if(n<=0){n=0;}
-	    $("#mini_link").css("-webkit-transform","translate3d("+(-n*50)+"%,0,0)");
+	    $("#mini_menu").css("-webkit-transform","translate3d("+(-n*50)+"%,0,0)");
 	})
 	
 	
