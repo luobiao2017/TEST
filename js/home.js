@@ -1,6 +1,9 @@
 $(function(){
 	
-	//第一屏
+	//************************************第一屏******************************************
+	
+	
+    //菜单左右滑动效果
 	var n=0;
 	$("#section_menu")[0].addEventListener("touchstart",function(ev){//滑动菜单
 		ev.preventDefault();
