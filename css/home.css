@@ -10,13 +10,13 @@ a { text-decoration: none; -webkit-tap-highlight-color: transparent; }
 
 .fl_rt { float: right; }
 
-.box { width: 100%; height: 100%; position: relative; }
-.box header { width: 100%; height: 2rem; background: black; position: fixed; left: 0; top: 0; z-index: 999; }
+.box { width: 100%; height: 100%; }
+.box header { width: 16rem; height: 2rem; background: black; position: fixed; left: 0; top: 0; z-index: 999; }
 .box header .menu_left { width: 7.5rem; height: 2rem; line-height: 2rem; }
 .box header .menu_left span { display: inline-block; color: white; font-size: 0.8rem; margin: 0 0.5rem; }
 .box header .menu_right { width: 8.5rem; height: 2rem; padding-top: 0.25rem; display: -webkit-flex; -webkit-justify-content: space-around; }
 .box header .menu_right span { width: 1.5rem; height: 1.5rem; border: 1px #eee solid; border-radius: 0.75rem; line-height: 1.5rem; text-align: center; color: white; font-size: 0.5rem; box-sizing: border-box; }
-.box section { width: 100%; height: 100%; padding-top: 2rem; }
+.box section { width: 16rem; height: 100%; padding-top: 2rem; }
 .box section .page_box { width: 600%; height: 100%; position: relative; overflow-x: scroll; }
 .box section .page_box .page1 { width: 16rem; height: 100%; overflow-y: scroll; }
 .box section .page_box .page1 .search { width: 16rem; height: 2.25rem; background: #FAFAFA; padding: 0.4rem 0.25rem; position: absolute; left: 0; top: 0; z-index: 999; }

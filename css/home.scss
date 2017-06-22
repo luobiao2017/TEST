@@ -6,8 +6,8 @@ a{text-decoration: none;-webkit-tap-highlight-color: transparent;}
 .fl_lt{float: left;}
 .fl_rt{float: right;}
 @mixin txtcenter($h,$txtcenter){height: $h;line-height: $txtcenter;}
-.box{width: 100%;height: 100%;position: relative;
-	header{width: 100%;height: 40/$bl+rem;background: black;position: fixed;left: 0;top: 0;z-index: 999;
+.box{width: 100%;height: 100%;
+	header{width: 320/$bl+rem;height: 40/$bl+rem;background: black;position: fixed;left: 0;top: 0;z-index: 999;
 		.menu_left{width: 150/$bl+rem;height: 40/$bl+rem;line-height: 40/$bl+rem;
 			span{display: inline-block;color: white;font-size: 16/$bl+rem;margin: 0 10/$bl+rem;}
 		}
@@ -15,7 +15,7 @@ a{text-decoration: none;-webkit-tap-highlight-color: transparent;}
 			span{width: 30/$bl+rem;height: 30/$bl+rem;border: 1px #eee solid;border-radius: 15/$bl+rem;line-height: 30/$bl+rem;text-align: center;color: white;font-size: 10/$bl+rem;box-sizing: border-box;}
 		}
 	}
-	section{width: 100%;height: 100%;padding-top: 40/$bl+rem;
+	section{width: 320/$bl+rem;height: 100%;padding-top: 40/$bl+rem;
 	    .page_box{width: 600%;height: 100%;position: relative;overflow-x: scroll;
 	        .page1{width: 320/$bl+rem;height: 100%;overflow-y: scroll;
 	        	.search{width: 320/$bl+rem;height: 45/$bl+rem;background: #FAFAFA;padding: 8/$bl+rem 5/$bl+rem;position: absolute;left: 0;top: 0;z-index: 999;
