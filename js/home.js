@@ -43,9 +43,9 @@ $(function(){
 	})
     //section_menu菜单左右滑动效果
 	var n=0;
-	$("#section_menu")[0].addEventListener("touchstart",function(ev){//滑动菜单
-		ev.preventDefault();
-	})
+//	$("#section_menu")[0].addEventListener("touchstart",function(ev){//滑动菜单
+//		ev.preventDefault();
+//	})
 	var w=$(window).width();
 	$("#section_menu").on("swipeLeft",function(){
 		n++;if(n>=1){n=1;}
