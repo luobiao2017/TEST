@@ -17,8 +17,8 @@ a { text-decoration: none; -webkit-tap-highlight-color: transparent; }
 .box header .menu_right { width: 8.5rem; height: 2rem; padding-top: 0.25rem; display: -webkit-flex; -webkit-justify-content: space-around; }
 .box header .menu_right span { width: 1.5rem; height: 1.5rem; border: 1px #eee solid; border-radius: 0.75rem; line-height: 1.5rem; text-align: center; color: white; font-size: 0.5rem; box-sizing: border-box; }
 .box section { width: 100%; height: 100%; padding-top: 2rem; }
-.box section .page_box { width: 600%; height: 100%; position: relative; }
-.box section .page_box .page1 { width: 16rem; height: 100%; overflow: auto; }
+.box section .page_box { width: 600%; height: 100%; position: relative; overflow-x: scroll; }
+.box section .page_box .page1 { width: 16rem; height: 100%; overflow-y: scroll; }
 .box section .page_box .page1 .search { width: 16rem; height: 2.25rem; background: #FAFAFA; padding: 0.4rem 0.25rem; position: absolute; left: 0; top: 0; z-index: 999; }
 .box section .page_box .page1 .search span:nth-of-type(1) { display: inline-block; width: 2.75rem; height: 1.25rem; background: #FFD700; vertical-align: middle; border: none; border-radius: 0.15rem 0 0 0.15rem; font-size: 0.6rem; text-align: center; line-height: 1.25rem; }
 .box section .page_box .page1 .search input { width: 9.25rem; height: 1.25rem; background: #FCE34C; vertical-align: middle; border: none; border-radius: 0 0.15rem 0.15rem 0; outline: none; font-size: 0.6rem; }
@@ -36,7 +36,7 @@ a { text-decoration: none; -webkit-tap-highlight-color: transparent; }
 .box section .page_box .page1 .section_submenu .co { color: black; }
 .box section .page_box .page1 .section_pics li { display: none; }
 .box section .page_box .page1 .section_pics li img { width: 15.5rem; height: 15.5rem; margin: 0.25rem; display: block; }
-.box section .page_box .page2 { width: 16rem; height: 26.4rem; overflow: auto; }
+.box section .page_box .page2 { width: 16rem; height: 26.4rem; overflow-y: scroll; }
 .box section .page_box .page2 ul { width: 16rem; height: 26.4rem; position: relative; }
 .box section .page_box .page2 ul .page2_start { width: 16rem; height: 100%; position: absolute; left: 0; top: 0; }
 .box section .page_box .page2 ul .page2_start ul { width: 16rem; height: 100%; position: relative; }
@@ -136,7 +136,7 @@ a { text-decoration: none; -webkit-tap-highlight-color: transparent; }
 .box section .page_box .page2 ul .page2_prev ul .page2_login .login_key div { display: inline-block; margin: 0; padding: 0; float: left; width: 33.3%; height: 2.25rem; border: 1px black solid; box-sizing: border-box; background: #656365; opacity: 0.7; float: left; color: #fff; text-align: center; }
 .box section .page_box .page2 ul .page2_prev ul .page2_login .login_key div:nth-last-child(1) { background: black; color: white; }
 .box section .page_box .page2 ul .page2_prev ul .page2_login .login_key div:nth-last-child(3) { background: black; color: white; }
-.box section .page_box .page3 { width: 16rem; height: 26.4rem; overflow: auto; }
+.box section .page_box .page3 { width: 16rem; height: 26.4rem; overflow-y: scroll; }
 .box section .page_box .page3 .page3_search { width: 16rem; height: 2.25rem; background: #FAFAFA; text-align: center; line-height: 2.25rem; }
 .box section .page_box .page3 .page3_search span { width: 1.25rem; height: 1.25rem; background: #FCE34C; vertical-align: middle; padding: 0.4rem 0.4rem; font-size: 0.65rem; }
 .box section .page_box .page3 .page3_search input { width: 13.25rem; height: 1.25rem; background: #FCE34C; vertical-align: middle; border: none; border-radius: 0 0.15rem 0.15rem 0; outline: none; }
