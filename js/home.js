@@ -1,16 +1,16 @@
 $(function(){
 	
-	var i=0;
-	$(".page_box")[0].addEventListener("touchstart",function(ev){//滑动菜单
-		ev.preventDefault();
-	})
-	$(".page_box").on("swipeLeft",function(){
-		i++;if(n>=5){i=1;}
-	    $(".page_box li").css("-webkit-transform","translate3d("+(-i*100)+"%,0,0)");
-	}).on("swipeRight",function(){
-		i--;if(n<=0){i=0;}
-	    $(".page_box li").css("-webkit-transform","translate3d("+(-i*100)+"%,0,0)");
-	})
+//	var i=0;
+//	$(".page_box")[0].addEventListener("touchstart",function(ev){//滑动菜单
+//		ev.preventDefault();
+//	})
+//	$(".page_box").on("swipeLeft",function(){
+//		i++;if(n>=5){i=1;}
+//	    $(".page_box li").css("-webkit-transform","translate3d("+(-i*100)+"%,0,0)");
+//	}).on("swipeRight",function(){
+//		i--;if(n<=0){i=0;}
+//	    $(".page_box li").css("-webkit-transform","translate3d("+(-i*100)+"%,0,0)");
+//	})
 	
 	
 	
